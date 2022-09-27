@@ -1,1 +1,0 @@
-INSERT INTO subjects(subject, message, aikaleima, number_of_message) VALUES('Subject', 'Message', now(), 1)
