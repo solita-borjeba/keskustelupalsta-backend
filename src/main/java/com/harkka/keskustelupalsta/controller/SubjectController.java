@@ -26,7 +26,6 @@ public class SubjectController {
         this.service = new SubjectService();
     }
 
-
     @PostMapping("/createSubject")  //BB korjaa Postiksi
     @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<Object> createSubject(@RequestBody Subject subject) {
