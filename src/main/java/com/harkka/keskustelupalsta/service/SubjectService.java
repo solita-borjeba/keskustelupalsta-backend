@@ -13,15 +13,12 @@ import java.util.Optional;
 
 public class SubjectService {
 
-    @Autowired
-    SubjectRepository subjectRepositoryA;
-
     public ResponseEntity<Object> createSubject(Subject newSubject, SubjectRepository subjectRepository) {
 
         try {
             System.out.println("New subject is saved to DB.");
             return ResponseHandler.generateResponse("New subject has been saved.",
-                    HttpStatus.CREATED, subjectRepositoryA.save(new Subject(newSubject.getSubjectname(), newSubject.getMessage())));
+                    HttpStatus.CREATED, subjectRepository.save(new Subject(newSubject.getSubjectname(), newSubject.getMessage())));
         } catch (Exception e) {
             return ResponseHandler.generateResponse("Some failure happened in the saving new subject.",
                     HttpStatus.INTERNAL_SERVER_ERROR, null);
