@@ -19,7 +19,6 @@ import java.util.Optional;
 public class SubjectController {
 
     private final SubjectService service;
-    TestResponseService trs;
     @Autowired
     private SubjectRepository subjectRepository;
 
