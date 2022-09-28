@@ -1,0 +1,41 @@
+CREATE :
+------
+Method : POST
+Request URL : http://localhost:8080/createSubscriber/
+Header : Content-Type application/json
+Body : 
+{
+    "subjectname": "Test response4",
+    "message": "Toimiiko4"
+}
+
+
+
+
+GET:
+---
+Method : GET
+Request URL : http://localhost:8080/getSubscribers/
+Header : Content-Type application/json
+
+
+
+UPDATE :
+------
+Method : PUT
+Request URL : http://localhost:8080/updateSubscriber/<haluttu id tähän>
+Header : Content-Type application/json
+Body : 
+{
+    "subjectname": "Test response5",
+    "message": "Toimiiko5"
+}
+
+
+
+
+
+Delete : 
+Method : DELETE
+Request URL : http://localhost:8080/deleteSubscriber/<haluttu id tähän>
+Header : Content-Type application/json
